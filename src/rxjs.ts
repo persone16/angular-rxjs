@@ -1,7 +1,7 @@
 import { debounceTime, distinctUntilChanged, fromEvent, Observable } from "rxjs";
 import { map, catchError } from 'rxjs/operators'
 
-// #1 case
+// #1 case 
 // const search$ = new Observable<Event>(observer => {
 // 	console.log('Start in Observable');
 	
@@ -20,7 +20,7 @@ import { map, catchError } from 'rxjs/operators'
 // 	console.log('End in Observable');
 // });
 
-// #2 case
+// #2 case 
 const input = document.getElementById('search');
 const el1: HTMLElement = input as HTMLElement;
 const search$: Observable<Event> = fromEvent<Event>(
